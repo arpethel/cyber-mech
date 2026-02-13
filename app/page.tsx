@@ -80,8 +80,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Screenshots Section */}
+      {/* Gameplay Video Section */}
       <section className="relative py-24 grid-floor">
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="neon-text text-center font-orbitron text-3xl font-bold tracking-wider text-cyan-400 md:text-4xl">
+            SEE IT IN ACTION
+          </h2>
+          <div className="mt-12 flex justify-center">
+            <div className="phone-mockup w-[280px] md:w-[320px]">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="rounded-[1.5rem]"
+              >
+                <source src="/gameplay.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Screenshots Section */}
+      <section className="relative py-24">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="neon-text text-center font-orbitron text-3xl font-bold tracking-wider text-cyan-400 md:text-4xl">
             GAMEPLAY
