@@ -1,8 +1,11 @@
 import Image from "next/image";
+import MusicPlayer from "./components/MusicPlayer";
 
 export default function Home() {
   return (
     <main>
+      <MusicPlayer />
+
       {/* Hero Section */}
       <section className="relative min-h-screen overflow-hidden">
         {/* Background Image */}
@@ -23,11 +26,12 @@ export default function Home() {
             CYBER MECH
           </h1>
           <p className="neon-text-magenta mt-4 font-orbitron text-lg font-semibold tracking-wide text-fuchsia-400 md:text-2xl">
-            DEFEND THE NEON CITY
+            LIBERATE THE NEON CITY
           </p>
-          <p className="mt-6 max-w-lg font-share-tech-mono text-base text-gray-300 md:text-lg">
-            Pilot your mech through a cyberpunk battlefield. Battle enemies,
-            collect chips, and power up to survive the neon onslaught.
+          <p className="mt-6 max-w-xl font-share-tech-mono text-base leading-relaxed text-gray-300 md:text-lg">
+            Deep in the neon-lit corridors of Cyber City, the Mech Boss has
+            scattered precious data chips across the sky. You are Neo-Striker, a
+            rogue combat jet built to fight back.
           </p>
 
           {/* App Store Button */}
@@ -64,44 +68,56 @@ export default function Home() {
         </div>
       </section>
 
+      {/* The Mission */}
+      <section className="relative py-24">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0014] via-fuchsia-900/5 to-[#0a0014]" />
+        <div className="relative mx-auto max-w-3xl px-6 text-center">
+          <h2 className="neon-text-magenta font-orbitron text-3xl font-bold tracking-wider text-fuchsia-400 md:text-4xl">
+            YOUR MISSION
+          </h2>
+          <p className="mt-8 font-share-tech-mono text-base leading-relaxed text-gray-300">
+            Fly through the droid gates, collect every chip, and destroy the
+            Mech Boss before time runs out. The neon city&apos;s fate depends on
+            you.
+          </p>
+        </div>
+      </section>
+
       {/* Screenshots Section */}
       <section className="relative py-24 grid-floor">
         <div className="mx-auto max-w-6xl px-6">
-          <h2 className="neon-text-magenta text-center font-orbitron text-3xl font-bold tracking-wider text-fuchsia-400 md:text-4xl">
+          <h2 className="neon-text text-center font-orbitron text-3xl font-bold tracking-wider text-cyan-400 md:text-4xl">
             GAMEPLAY
           </h2>
           <p className="mt-4 text-center font-share-tech-mono text-gray-400">
-            Intense mech combat in a neon-soaked cyberpunk world
+            Intense combat in a neon-soaked cyberpunk world
           </p>
 
           <div className="mt-16 flex flex-col items-center gap-10 md:flex-row md:justify-center md:gap-8">
-            {/* Screenshot 1 */}
             <div className="phone-mockup float-animation w-[240px] md:w-[260px]">
               <Image
                 src="/Boost.png"
-                alt="Cyber Mech gameplay - Level 2 battle"
+                alt="Cyber Mech gameplay - Boost through droids"
                 width={260}
                 height={563}
                 className="rounded-[1.5rem]"
               />
             </div>
 
-            {/* Screenshot 2 */}
             <div className="phone-mockup float-animation-delayed w-[240px] md:w-[260px]">
               <Image
                 src="/Mech-battle.png"
-                alt="Cyber Mech gameplay - Mech laser attack"
+                alt="Cyber Mech gameplay - Laser attack on Mech Boss"
                 width={260}
                 height={563}
                 className="rounded-[1.5rem]"
               />
             </div>
 
-            {/* Screenshot 3 */}
             <div className="phone-mockup float-animation-delayed-2 w-[240px] md:w-[260px]">
               <Image
                 src="/Collect-chips.png"
-                alt="Cyber Mech gameplay - Collecting chips"
+                alt="Cyber Mech gameplay - Collecting data chips"
                 width={260}
                 height={563}
                 className="rounded-[1.5rem]"
@@ -111,68 +127,103 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Game Mechanics Section */}
       <section className="relative py-24">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-fuchsia-900/10 to-transparent" />
         <div className="relative mx-auto max-w-5xl px-6">
           <h2 className="neon-text text-center font-orbitron text-3xl font-bold tracking-wider text-cyan-400 md:text-4xl">
-            FEATURES
+            HOW TO SURVIVE
           </h2>
 
-          <div className="mt-16 grid gap-8 md:grid-cols-3">
-            {/* Feature 1 */}
+          <div className="mt-16 grid gap-8 md:grid-cols-2">
+            {/* Time */}
             <div className="rounded-xl border border-cyan-500/20 bg-[#0a0014]/80 p-8 transition-all hover:border-cyan-500/40">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-cyan-500/10 text-2xl">
-                <span className="text-cyan-400">&#9876;</span>
-              </div>
               <h3 className="font-orbitron text-lg font-bold text-cyan-400">
-                MECH COMBAT
+                &#9202; TIME
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
-                Battle waves of enemies with your powerful mech. Use boosts and
-                special attacks to dominate the battlefield.
+                Your clock starts at just 5 seconds. Every droid gate you pass
+                adds precious time. Boost through droids and shatter them to
+                earn +10 seconds. If the clock hits zero, it&apos;s game over.
               </p>
             </div>
 
-            {/* Feature 2 */}
+            {/* Health */}
             <div className="rounded-xl border border-fuchsia-500/20 bg-[#0a0014]/80 p-8 transition-all hover:border-fuchsia-500/40">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-fuchsia-500/10 text-2xl">
-                <span className="text-fuchsia-400">&#9733;</span>
-              </div>
               <h3 className="font-orbitron text-lg font-bold text-fuchsia-400">
-                LEVEL UP
+                &#10084; HEALTH
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
-                Progress through increasingly challenging levels. Each stage
-                brings tougher enemies and bigger rewards.
+                Neo-Striker has 3 health bars. Each collision with a droid costs
+                1 bar. When you&apos;re down to your last hit, you have 1.5
+                seconds to activate a boost or laser to save yourself. With
+                1:15+ on the clock and missing health, trade 60 seconds for 1
+                health bar.
               </p>
             </div>
 
-            {/* Feature 3 */}
+            {/* Boosts */}
             <div className="rounded-xl border border-purple-500/20 bg-[#0a0014]/80 p-8 transition-all hover:border-purple-500/40">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-purple-500/10 text-2xl">
-                <span className="text-purple-400">&#9670;</span>
-              </div>
               <h3 className="font-orbitron text-lg font-bold text-purple-400">
-                COLLECT CHIPS
+                &#9889; BOOSTS
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
-                Gather chips throughout each mission to rack up your score and
-                unlock powerful upgrades for your mech.
+                For every 5 droid gates you pass, you earn 1 boost. Stack up to
+                100. Activating a boost gives 2.5 seconds of invincible free
+                flight. While boosting, smash through droids and earn +10
+                seconds per pair destroyed.
+              </p>
+            </div>
+
+            {/* Lasers */}
+            <div className="rounded-xl border border-red-500/20 bg-[#0a0014]/80 p-8 transition-all hover:border-red-500/40">
+              <h3 className="font-orbitron text-lg font-bold text-red-400">
+                &#128308; LASERS
+              </h3>
+              <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
+                For every 3 boosts you earn, you receive 1 laser charge. Stack
+                up to 100. Firing a laser unleashes twin beams for 3 seconds,
+                vaporizing every droid and the Mech Boss in your path.
+              </p>
+            </div>
+
+            {/* Mech Boss */}
+            <div className="rounded-xl border border-fuchsia-500/20 bg-[#0a0014]/80 p-8 transition-all hover:border-fuchsia-500/40">
+              <h3 className="font-orbitron text-lg font-bold text-fuchsia-400">
+                &#129302; MECH BOSS
+              </h3>
+              <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
+                Every 10 chips you collect, the Mech Boss drops from the sky to
+                reclaim his chips. From Level 10 onward, he grows bolder and
+                returns every 5 chips. Hit him with a boost or laser blast to
+                defeat him. Each victory rewards +5 chips and a level up. After
+                Level 10, he grows 10% larger each encounter.
+              </p>
+            </div>
+
+            {/* Speed */}
+            <div className="rounded-xl border border-cyan-500/20 bg-[#0a0014]/80 p-8 transition-all hover:border-cyan-500/40">
+              <h3 className="font-orbitron text-lg font-bold text-cyan-400">
+                &#127918; SPEED
+              </h3>
+              <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
+                The droids accelerate every 10 levels, pushing Neo-Striker
+                closer to the edge. Stay sharp as the pace intensifies on the
+                road to Level 100.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Victory / CTA Section */}
       <section className="relative py-24 scanlines">
         <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
           <h2 className="neon-text font-orbitron text-3xl font-bold tracking-wider text-cyan-400 md:text-4xl">
-            READY TO FIGHT?
+            REACH LEVEL 100
           </h2>
-          <p className="mt-6 font-share-tech-mono text-gray-400">
-            Download Cyber Mech now and start your mission.
+          <p className="mt-6 font-share-tech-mono text-base leading-relaxed text-gray-300">
+            Defeat the Mech Boss once and for all and liberate Cyber City.
           </p>
           <a
             href="#"
