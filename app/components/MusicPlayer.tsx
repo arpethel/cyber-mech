@@ -1,43 +1,23 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [hasInteracted, setHasInteracted] = useState(false);
-
-  const startPlayback = useCallback(() => {
-    if (!audioRef.current || hasInteracted) return;
-    setHasInteracted(true);
-    audioRef.current.play().then(() => {
-      setIsPlaying(true);
-    }).catch(() => {
-      // Autoplay blocked — user can toggle manually
-    });
-  }, [hasInteracted]);
 
   useEffect(() => {
     audioRef.current = new Audio("/rust-circuit.mp3");
     audioRef.current.loop = true;
     audioRef.current.volume = 0.5;
 
-    // Try to autoplay on first user interaction with the page
-    const events = ["click", "touchstart", "keydown"] as const;
-    events.forEach((event) => {
-      document.addEventListener(event, startPlayback, { once: true });
-    });
-
     return () => {
-      events.forEach((event) => {
-        document.removeEventListener(event, startPlayback);
-      });
       if (audioRef.current) {
         audioRef.current.pause();
         audioRef.current = null;
       }
     };
-  }, [startPlayback]);
+  }, []);
 
   const toggleMusic = () => {
     if (!audioRef.current) return;
@@ -48,7 +28,6 @@ export default function MusicPlayer() {
     } else {
       audioRef.current.play().then(() => {
         setIsPlaying(true);
-        setHasInteracted(true);
       });
     }
   };
