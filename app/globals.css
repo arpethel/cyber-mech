@@ -1,26 +1,142 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-background: #0a0014;
+  --color-foreground: #ededed;
+  --color-neon-cyan: #00f0ff;
+  --color-neon-magenta: #ff00ff;
+  --color-neon-purple: #a855f7;
+  --font-orbitron: var(--font-orbitron);
+  --font-share-tech-mono: var(--font-share-tech-mono);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #0a0014;
+  color: #ededed;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Neon glow text */
+.neon-text {
+  text-shadow:
+    0 0 7px #00f0ff,
+    0 0 10px #00f0ff,
+    0 0 21px #00f0ff,
+    0 0 42px #0fa,
+    0 0 82px #0fa;
+}
+
+.neon-text-magenta {
+  text-shadow:
+    0 0 7px #ff00ff,
+    0 0 10px #ff00ff,
+    0 0 21px #ff00ff,
+    0 0 42px #ff00ff;
+}
+
+/* Neon border glow */
+.neon-border {
+  box-shadow:
+    0 0 5px #00f0ff,
+    0 0 10px #00f0ff,
+    inset 0 0 5px #00f0ff33;
+}
+
+/* Screenshot phone mockup */
+.phone-mockup {
+  background: linear-gradient(145deg, #1a1a2e, #0a0014);
+  border: 2px solid #00f0ff44;
+  border-radius: 2rem;
+  padding: 8px;
+  box-shadow:
+    0 0 15px #00f0ff22,
+    0 0 30px #ff00ff11;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.phone-mockup:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 0 20px #00f0ff44,
+    0 0 40px #ff00ff22;
+}
+
+/* Grid floor effect */
+.grid-floor {
+  background-image:
+    linear-gradient(#00f0ff11 1px, transparent 1px),
+    linear-gradient(90deg, #00f0ff11 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Animated gradient background */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, #0a0014, #1a0033, #0a0014);
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+/* Scanline overlay */
+.scanlines::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    #00f0ff05 2px,
+    #00f0ff05 4px
+  );
+  pointer-events: none;
+}
+
+/* Pulse animation for CTA */
+@keyframes neon-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 5px #00f0ff,
+      0 0 10px #00f0ff;
+  }
+  50% {
+    box-shadow:
+      0 0 10px #00f0ff,
+      0 0 20px #00f0ff,
+      0 0 40px #00f0ff44;
+  }
+}
+
+.neon-pulse {
+  animation: neon-pulse 2s ease-in-out infinite;
+}
+
+/* Floating animation for screenshots */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: float 4s ease-in-out infinite;
+}
+
+.float-animation-delayed {
+  animation: float 4s ease-in-out 1s infinite;
+}
+
+.float-animation-delayed-2 {
+  animation: float 4s ease-in-out 2s infinite;
 }
