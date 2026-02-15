@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Analytics } from "@vercel/analytics/next";
 import Link from "next/link";
+import TimeOnPage from "./TimeOnPage";
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
@@ -30,7 +31,12 @@ export default function CookieBanner() {
 
   return (
     <>
-      {consent === "accepted" && <Analytics />}
+      {consent === "accepted" && (
+        <>
+          <Analytics />
+          <TimeOnPage />
+        </>
+      )}
 
       {visible && (
         <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-cyan-500/20 bg-[#0a0014]/95 backdrop-blur-md">

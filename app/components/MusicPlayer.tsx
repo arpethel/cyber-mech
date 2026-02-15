@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { track } from "@vercel/analytics";
 
 export default function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -25,9 +26,11 @@ export default function MusicPlayer() {
     if (isPlaying) {
       audioRef.current.pause();
       setIsPlaying(false);
+      track("music_toggle", { action: "paused" });
     } else {
       audioRef.current.play().then(() => {
         setIsPlaying(true);
+        track("music_toggle", { action: "playing" });
       });
     }
   };
