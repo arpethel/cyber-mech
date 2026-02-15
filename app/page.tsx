@@ -177,7 +177,7 @@ export default function Home() {
                 HEALTH
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
-                Neo-Striker runs on 3 health bars. Every collision tears plating
+                Neo-Striker has 3 health bars. Every collision tears plating
                 from your hull. Down to your last hit, the world slows &mdash;
                 1.5 seconds to ignite a boost or fire a laser. With 1:15+ on
                 the clock, trade 60 seconds for 1 health bar. Survival costs
@@ -223,7 +223,7 @@ export default function Home() {
                 Every 10 chips reclaimed, Cyber Mech crashes down from the smog
                 to take them back. From Level 10 onward, he grows desperate
                 &mdash; attacking every 5 chips. Defeat him for +5 chips and a
-                Level Up. After Level 10, he grows 10% larger each encounter. A
+                Level Up. After Level 10, he grows larger each encounter. A
                 towering monument to fear &mdash; but he can still fall.
               </p>
             </div>
