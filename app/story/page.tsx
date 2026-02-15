@@ -87,7 +87,7 @@ export default function Story() {
           </h2>
           <div className="mt-6 space-y-4 font-share-tech-mono text-sm leading-relaxed text-gray-300">
             <p>
-              Neo-Striker runs on{" "}
+              You have {" "}
               <span className="text-cyan-400">3 health bars</span>.
             </p>
             <p>
@@ -195,7 +195,7 @@ export default function Story() {
             </p>
             <p>
               After Level 10, he grows{" "}
-              <span className="text-fuchsia-400">10% larger</span> each
+              <span className="text-fuchsia-400">larger</span> each
               encounter &mdash; a towering monument to fear.
             </p>
             <p className="italic text-gray-400">
@@ -244,7 +244,7 @@ export default function Story() {
               the stolen AI chips.
             </p>
             <p className="text-gray-400">
-              When Neo-Striker takes enough chips&hellip;
+              When you take enough chips&hellip;
               <br />
               When the droids lie in smoking ruin&hellip;
               <br />
@@ -259,7 +259,7 @@ export default function Story() {
               And here&apos;s the truth hidden beneath the steel and sparks:
             </p>
             <p>
-              Neo-Striker fights alone &mdash; but the rebellion is bigger than
+              You fight alone &mdash; but the rebellion is bigger than
               one jet.
             </p>
             <p>
