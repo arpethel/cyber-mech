@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Orbitron, Share_Tech_Mono } from "next/font/google";
 import Link from "next/link";
+import CookieBanner from "./components/CookieBanner";
 import "./globals.css";
 
 const orbitron = Orbitron({
@@ -61,6 +62,7 @@ export default function RootLayout({
           </div>
         </nav>
         {children}
+        <CookieBanner />
         <footer className="border-t border-cyan-500/20 bg-[#0a0014] py-8">
           <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 text-center">
             <p className="font-share-tech-mono text-sm text-gray-500">

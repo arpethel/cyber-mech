@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
           PRIVACY POLICY
         </h1>
         <p className="mt-2 font-share-tech-mono text-sm text-gray-500">
-          Last updated: February 2025
+          Last updated: February 2026
         </p>
 
         <div className="mt-12 space-y-10 font-share-tech-mono text-sm leading-relaxed text-gray-300">
@@ -22,11 +22,11 @@ export default function PrivacyPolicy() {
               1. INTRODUCTION
             </h2>
             <p>
-              Welcome to Cyber Mech (&quot;the App&quot;). We respect your
-              privacy and are committed to protecting any information collected
-              while you use our application. This Privacy Policy explains what
-              data we collect, how we use it, and your rights regarding that
-              data.
+              Welcome to Cyber Mech (&quot;the App&quot;) and its website
+              (&quot;the Site&quot;). We respect your privacy and are committed
+              to protecting any information collected while you use our
+              application and website. This Privacy Policy explains what data we
+              collect, how we use it, and your rights regarding that data.
             </p>
           </section>
 
@@ -52,6 +52,13 @@ export default function PrivacyPolicy() {
                 <span className="text-gray-300">Analytics:</span> We may collect
                 anonymous, aggregated usage analytics to improve the game
                 experience. This data cannot be used to identify you personally.
+              </li>
+              <li>
+                <span className="text-gray-300">Website Analytics:</span> Our
+                website uses Vercel Analytics to collect anonymous page view and
+                visitor data. This helps us understand how visitors interact with
+                our site. No personally identifiable information is collected
+                through this service.
               </li>
             </ul>
           </section>
@@ -118,7 +125,38 @@ export default function PrivacyPolicy() {
 
           <section>
             <h2 className="mb-4 font-orbitron text-lg font-bold text-fuchsia-400">
-              8. CHANGES TO THIS POLICY
+              8. COOKIES & TRACKING
+            </h2>
+            <p className="mb-3">
+              Our website uses cookies and similar technologies to enhance your
+              experience:
+            </p>
+            <ul className="list-inside list-disc space-y-2 text-gray-400">
+              <li>
+                <span className="text-gray-300">Essential Cookies:</span> Used
+                to remember your cookie consent preference. These are stored
+                locally on your device and are necessary for the website to
+                function properly.
+              </li>
+              <li>
+                <span className="text-gray-300">Analytics:</span> We use Vercel
+                Analytics to collect anonymous, aggregated data about page views
+                and site usage. This service does not use cookies to track
+                individual users and does not collect personally identifiable
+                information.
+              </li>
+            </ul>
+            <p className="mt-3">
+              When you first visit our website, a banner will appear asking for
+              your consent. You may accept or decline analytics tracking. Your
+              preference is stored locally on your device and can be changed at
+              any time by clearing your browser&apos;s local storage.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="mb-4 font-orbitron text-lg font-bold text-fuchsia-400">
+              9. CHANGES TO THIS POLICY
             </h2>
             <p>
               We may update this Privacy Policy from time to time. Any changes
@@ -130,7 +168,7 @@ export default function PrivacyPolicy() {
 
           <section>
             <h2 className="mb-4 font-orbitron text-lg font-bold text-fuchsia-400">
-              9. CONTACT US
+              10. CONTACT US
             </h2>
             <p>
               If you have questions or concerns about this Privacy Policy, please

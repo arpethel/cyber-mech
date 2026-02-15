@@ -158,8 +158,9 @@ export default function Home() {
           <div className="mt-16 grid gap-8 md:grid-cols-2">
             {/* Time */}
             <div className="rounded-xl border border-cyan-500/20 bg-[#0a0014]/80 p-8 transition-all hover:border-cyan-500/40">
-              <h3 className="font-orbitron text-lg font-bold text-cyan-400">
-                &#9202; TIME
+              <h3 className="flex items-center gap-2 font-orbitron text-lg font-bold text-cyan-400">
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
+                TIME
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
                 Your clock boots at 5 seconds &mdash; a dying pulse in a dying
@@ -171,8 +172,9 @@ export default function Home() {
 
             {/* Health */}
             <div className="rounded-xl border border-fuchsia-500/20 bg-[#0a0014]/80 p-8 transition-all hover:border-fuchsia-500/40">
-              <h3 className="font-orbitron text-lg font-bold text-fuchsia-400">
-                &#10084; HEALTH
+              <h3 className="flex items-center gap-2 font-orbitron text-lg font-bold text-fuchsia-400">
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg>
+                HEALTH
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
                 Neo-Striker runs on 3 health bars. Every collision tears plating
@@ -185,8 +187,9 @@ export default function Home() {
 
             {/* Boosts */}
             <div className="rounded-xl border border-purple-500/20 bg-[#0a0014]/80 p-8 transition-all hover:border-purple-500/40">
-              <h3 className="font-orbitron text-lg font-bold text-purple-400">
-                &#9889; BOOSTS
+              <h3 className="flex items-center gap-2 font-orbitron text-lg font-bold text-purple-400">
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>
+                BOOSTS
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
                 Every 5 droid gates conquered earns 1 Boost. Stack up to 100.
@@ -198,8 +201,9 @@ export default function Home() {
 
             {/* Lasers */}
             <div className="rounded-xl border border-red-500/20 bg-[#0a0014]/80 p-8 transition-all hover:border-red-500/40">
-              <h3 className="font-orbitron text-lg font-bold text-red-400">
-                &#128308; LASERS
+              <h3 className="flex items-center gap-2 font-orbitron text-lg font-bold text-red-400">
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3" /><line x1="12" y1="1" x2="12" y2="4" /><line x1="12" y1="20" x2="12" y2="23" /><line x1="4.22" y1="4.22" x2="6.34" y2="6.34" /><line x1="17.66" y1="17.66" x2="19.78" y2="19.78" /><line x1="1" y1="12" x2="4" y2="12" /><line x1="20" y1="12" x2="23" y2="12" /><line x1="4.22" y1="19.78" x2="6.34" y2="17.66" /><line x1="17.66" y1="6.34" x2="19.78" y2="4.22" /></svg>
+                LASERS
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
                 For every 3 Boosts, you earn 1 Laser charge. Stack up to 100.
@@ -211,8 +215,9 @@ export default function Home() {
 
             {/* Mech Boss */}
             <div className="rounded-xl border border-fuchsia-500/20 bg-[#0a0014]/80 p-8 transition-all hover:border-fuchsia-500/40">
-              <h3 className="font-orbitron text-lg font-bold text-fuchsia-400">
-                &#129302; MECH BOSS
+              <h3 className="flex items-center gap-2 font-orbitron text-lg font-bold text-fuchsia-400">
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" /></svg>
+                MECH BOSS
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
                 Every 10 chips reclaimed, Cyber Mech crashes down from the smog
@@ -225,8 +230,9 @@ export default function Home() {
 
             {/* Speed */}
             <div className="rounded-xl border border-cyan-500/20 bg-[#0a0014]/80 p-8 transition-all hover:border-cyan-500/40">
-              <h3 className="font-orbitron text-lg font-bold text-cyan-400">
-                &#127918; SPEED
+              <h3 className="flex items-center gap-2 font-orbitron text-lg font-bold text-cyan-400">
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                SPEED
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
                 Every 10 levels, the droids accelerate. The skyline blurs. The
