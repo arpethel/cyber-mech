@@ -40,6 +40,12 @@ export default function RootLayout({
             </Link>
             <div className="flex gap-6 font-share-tech-mono text-sm">
               <Link
+                href="/story"
+                className="text-gray-400 transition-colors hover:text-cyan-400"
+              >
+                Story
+              </Link>
+              <Link
                 href="/privacy-policy"
                 className="text-gray-400 transition-colors hover:text-cyan-400"
               >
@@ -61,6 +67,12 @@ export default function RootLayout({
               &copy; {new Date().getFullYear()} Cyber Mech. All rights reserved.
             </p>
             <div className="flex gap-6 font-share-tech-mono text-xs">
+              <Link
+                href="/story"
+                className="text-gray-500 transition-colors hover:text-cyan-400"
+              >
+                Story
+              </Link>
               <Link
                 href="/privacy-policy"
                 className="text-gray-500 transition-colors hover:text-cyan-400"

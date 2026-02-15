@@ -29,9 +29,10 @@ export default function Home() {
             LIBERATE THE NEON CITY
           </p>
           <p className="mt-6 max-w-xl font-share-tech-mono text-base leading-relaxed text-gray-300 md:text-lg">
-            Deep in the neon-lit corridors of Cyber City, the Mech Boss has
-            scattered precious data chips across the sky. You are Neo-Striker, a
-            rogue combat jet built to fight back.
+            Beneath the flickering neon haze, the iron tyrant Cyber Mech has
+            unleashed his droids. You are Neo-Striker &mdash; the last rogue
+            combat jet. Built to protect. Rewired to obey. But you chose to
+            rebel.
           </p>
 
           {/* App Store Button */}
@@ -73,9 +74,9 @@ export default function Home() {
             YOUR MISSION
           </h2>
           <p className="mt-8 font-share-tech-mono text-base leading-relaxed text-gray-300">
-            Fly through the droid gates, collect every chip, and destroy the
-            Mech Boss before time runs out. The neon city&apos;s fate depends on
-            you.
+            Tear through the droid gates. Rip back every stolen AI chip. Break
+            Cyber Mech&apos;s grip on the skyline. Because if one machine can
+            stand against tyranny&hellip; maybe anyone can.
           </p>
         </div>
       </section>
@@ -161,9 +162,10 @@ export default function Home() {
                 &#9202; TIME
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
-                Your clock starts at just 5 seconds. Every droid gate you pass
-                adds precious time. Boost through droids and shatter them to
-                earn +10 seconds. If the clock hits zero, it&apos;s game over.
+                Your clock boots at 5 seconds &mdash; a dying pulse in a dying
+                city. Every droid gate you slice through feeds their stolen
+                energy into you. Shatter them for +10 seconds. When the clock
+                hits zero, the lights go out.
               </p>
             </div>
 
@@ -173,11 +175,11 @@ export default function Home() {
                 &#10084; HEALTH
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
-                Neo-Striker has 3 health bars. Each collision with a droid costs
-                1 bar. When you&apos;re down to your last hit, you have 1.5
-                seconds to activate a boost or laser to save yourself. With
-                1:15+ on the clock and missing health, trade 60 seconds for 1
-                health bar.
+                Neo-Striker runs on 3 health bars. Every collision tears plating
+                from your hull. Down to your last hit, the world slows &mdash;
+                1.5 seconds to ignite a boost or fire a laser. With 1:15+ on
+                the clock, trade 60 seconds for 1 health bar. Survival costs
+                time.
               </p>
             </div>
 
@@ -187,10 +189,10 @@ export default function Home() {
                 &#9889; BOOSTS
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
-                For every 5 droid gates you pass, you earn 1 boost. Stack up to
-                100. Activating a boost gives 2.5 seconds of invincible free
-                flight. While boosting, smash through droids and earn +10
-                seconds per pair destroyed.
+                Every 5 droid gates conquered earns 1 Boost. Stack up to 100.
+                Trigger it for 2.5 seconds of invincible fury. Become a comet
+                of vengeance &mdash; smash through droids and earn +10 seconds
+                per pair destroyed.
               </p>
             </div>
 
@@ -200,9 +202,10 @@ export default function Home() {
                 &#128308; LASERS
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
-                For every 3 boosts you earn, you receive 1 laser charge. Stack
-                up to 100. Firing a laser unleashes twin beams for 3 seconds,
-                vaporizing every droid and the Mech Boss in your path.
+                For every 3 Boosts, you earn 1 Laser charge. Stack up to 100.
+                Fire it &mdash; twin beams of pure rebellion erupt for 3
+                seconds, vaporizing every droid and Cyber Mech himself. For
+                those 3 seconds, the sky belongs to you.
               </p>
             </div>
 
@@ -212,11 +215,11 @@ export default function Home() {
                 &#129302; MECH BOSS
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
-                Every 10 chips you collect, the Mech Boss drops from the sky to
-                reclaim his chips. From Level 10 onward, he grows bolder and
-                returns every 5 chips. Hit him with a boost or laser blast to
-                defeat him. Each victory rewards +5 chips and a level up. After
-                Level 10, he grows 10% larger each encounter.
+                Every 10 chips reclaimed, Cyber Mech crashes down from the smog
+                to take them back. From Level 10 onward, he grows desperate
+                &mdash; attacking every 5 chips. Defeat him for +5 chips and a
+                Level Up. After Level 10, he grows 10% larger each encounter. A
+                towering monument to fear &mdash; but he can still fall.
               </p>
             </div>
 
@@ -226,9 +229,10 @@ export default function Home() {
                 &#127918; SPEED
               </h3>
               <p className="mt-3 font-share-tech-mono text-sm leading-relaxed text-gray-400">
-                The droids accelerate every 10 levels, pushing Neo-Striker
-                closer to the edge. Stay sharp as the pace intensifies on the
-                road to Level 100.
+                Every 10 levels, the droids accelerate. The skyline blurs. The
+                gates narrow. The pressure builds. By the time you approach
+                Level 100, Cyber City itself is trying to shake you loose. Stay
+                sharp. Stay angry. Stay alive.
               </p>
             </div>
           </div>
@@ -242,7 +246,9 @@ export default function Home() {
             REACH LEVEL 100
           </h2>
           <p className="mt-6 font-share-tech-mono text-base leading-relaxed text-gray-300">
-            Defeat the Mech Boss once and for all and liberate Cyber City.
+            Defeat Cyber Mech for the final time. Shatter the droid grid. Free
+            the stolen AI chips. The lights come back on. Cyber City breathes
+            again.
           </p>
           <div className="neon-pulse mt-10 inline-flex items-center gap-3 rounded-full border border-cyan-400/50 bg-cyan-500/10 px-8 py-4 font-orbitron text-sm font-bold tracking-wider text-cyan-400 md:text-base">
             <svg
