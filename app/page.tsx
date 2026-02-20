@@ -113,31 +113,41 @@ export default function Home() {
             Intense combat in a neon-soaked cyberpunk world
           </p>
 
-          <div className="mt-16 flex flex-col items-center gap-10 md:flex-row md:justify-center md:gap-8">
-            <div className="phone-mockup float-animation w-[240px] md:w-[260px]">
+          <div className="mt-16 grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8">
+            <div className="phone-mockup float-animation">
               <Image
-                src="/Boost.png"
-                alt="Cyber Mech gameplay - Boost through droids"
+                src="/COMBO-ATTACKS.png"
+                alt="Cyber Mech gameplay - Combo Attacks"
                 width={260}
                 height={563}
                 className="rounded-[1.5rem]"
               />
             </div>
 
-            <div className="phone-mockup float-animation-delayed w-[240px] md:w-[260px]">
+            <div className="phone-mockup float-animation-delayed">
               <Image
-                src="/Mech-battle.png"
-                alt="Cyber Mech gameplay - Laser attack on Mech Boss"
+                src="/EPIC-MECH-BATTLES.png"
+                alt="Cyber Mech gameplay - Epic Mech Battles"
                 width={260}
                 height={563}
                 className="rounded-[1.5rem]"
               />
             </div>
 
-            <div className="phone-mockup float-animation-delayed-2 w-[240px] md:w-[260px]">
+            <div className="phone-mockup float-animation-delayed-2">
               <Image
-                src="/Collect-chips.png"
-                alt="Cyber Mech gameplay - Collecting data chips"
+                src="/BUST-THRU-DROIDS.png"
+                alt="Cyber Mech gameplay - Bust Thru Droids"
+                width={260}
+                height={563}
+                className="rounded-[1.5rem]"
+              />
+            </div>
+
+            <div className="phone-mockup float-animation">
+              <Image
+                src="/LEVEL-UP-FAST.png"
+                alt="Cyber Mech gameplay - Level Up Fast"
                 width={260}
                 height={563}
                 className="rounded-[1.5rem]"
