@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Analytics } from "@vercel/analytics/next";
 import Link from "next/link";
 import TimeOnPage from "./TimeOnPage";
+import FirebaseAnalytics from "./FirebaseAnalytics";
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
@@ -34,6 +35,7 @@ export default function CookieBanner() {
       {consent === "accepted" && (
         <>
           <Analytics />
+          <FirebaseAnalytics />
           <TimeOnPage />
         </>
       )}
