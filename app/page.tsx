@@ -37,7 +37,7 @@ export default function Home() {
 
           {/* TestFlight Beta */}
           <a
-            href="https://testflight.apple.com/join/kPbj9g77"
+            href="https://testflight.apple.com/join/fycCGRMC"
             target="_blank"
             rel="noopener noreferrer"
             className="neon-pulse mt-10 inline-flex items-center gap-3 rounded-full border border-cyan-400/50 bg-cyan-500/10 px-8 py-4 font-orbitron text-sm font-bold tracking-wider text-cyan-400 transition-all hover:bg-cyan-500/20 md:text-base"
@@ -272,7 +272,7 @@ export default function Home() {
             again.
           </p>
           <a
-            href="https://testflight.apple.com/join/kPbj9g77"
+            href="https://testflight.apple.com/join/fycCGRMC"
             target="_blank"
             rel="noopener noreferrer"
             className="neon-pulse mt-10 inline-flex items-center gap-3 rounded-full border border-cyan-400/50 bg-cyan-500/10 px-8 py-4 font-orbitron text-sm font-bold tracking-wider text-cyan-400 transition-all hover:bg-cyan-500/20 md:text-base"
