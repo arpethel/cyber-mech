@@ -173,7 +173,7 @@ export default function PrivacyPolicy() {
             <ul className="list-inside list-disc space-y-2 text-gray-400">
               <li>
                 <span className="text-gray-300">Banner Ads:</span> Displayed at
-                the bottom of the screen during gameplay.
+                the bottom of the menu screens.
               </li>
               <li>
                 <span className="text-gray-300">Interstitial Ads:</span>{" "}
@@ -210,12 +210,6 @@ export default function PrivacyPolicy() {
               You have the following options to control your data:
             </p>
             <ul className="list-inside list-disc space-y-2 text-gray-400">
-              <li>
-                <span className="text-gray-300">Analytics Opt-Out:</span> You
-                can disable Firebase Analytics data collection in the
-                App&apos;s settings. When opted out, no gameplay analytics will
-                be sent to our servers.
-              </li>
               <li>
                 <span className="text-gray-300">Remove Ads:</span> You can
                 purchase the ad-free option to remove all advertisements and the
